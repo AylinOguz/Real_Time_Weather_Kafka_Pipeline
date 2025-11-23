@@ -83,11 +83,13 @@ Example output:
 ### 7. Verify the Results
 
 - MySQL Database
-         USE weather_db;
-         SELECT * FROM weather;
+  
+       USE weather_db;
+       SELECT * FROM weather;
 
 - CSV File
-A CSV file will automatically appear in your project folder:
+A CSV file will automatically appear in your project folder
+
          weather_data_sample.csv
 
 
