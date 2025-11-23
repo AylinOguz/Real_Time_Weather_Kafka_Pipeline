@@ -17,9 +17,9 @@ Weather API → Producer → Kafka Topic → Consumer → MySQL + CSV
 
 - Appends the same record to weather_data_sample.csv.
 
-  ## How to Run the Project
+## How to Run the Project
 
-### Install Dependencies
+### 1. Install Dependencies
 
 - Create a virtual environment:
 
@@ -35,7 +35,7 @@ Weather API → Producer → Kafka Topic → Consumer → MySQL + CSV
 
   #### pip install -r requirements.txt
 
-### Start Kafka
+### 2. Start Kafka
 
 - If you are using Docker:
 
