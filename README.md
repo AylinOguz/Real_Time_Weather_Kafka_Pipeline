@@ -88,7 +88,8 @@ Example output:
        SELECT * FROM weather;
 
 - CSV File
-A CSV file will automatically appear in your project folder
+  
+  A CSV file will automatically appear in your project folder
 
          weather_data_sample.csv
 
