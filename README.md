@@ -23,7 +23,7 @@ Weather API → Producer → Kafka Topic → Consumer → MySQL + CSV
 
 Create a virtual environment:
 
-     #### python -m venv .venv
+        python -m venv .venv
 
 
 Activate it (Windows PowerShell):
