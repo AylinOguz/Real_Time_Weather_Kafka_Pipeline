@@ -28,7 +28,7 @@ python -m venv .venv
 
 - Activate it (Windows PowerShell):
 
-.venv\Scripts\activate
+- - .venv\Scripts\activate
 
 
 - Install required Python packages:
@@ -41,25 +41,18 @@ pip install -r requirements.txt
 
 docker-compose up -d
 
-
-If Kafka is installed locally, make sure these services are running:
-
-Zookeeper → localhost:2181
-
-Kafka Broker → localhost:9092
-
 ### Set Environment Variables
 
-In PowerShell:
+- In PowerShell:
 
 $env:WEATHER_API_KEY="your_api_key"
 $env:MYSQL_PASSWORD="your_mysql_password"
 
 ### Start MySQL and Create the Database
 
-Run the following command in MySQL:
+- Run the following command in MySQL:
 
-CREATE DATABASE weather_db;
+- CREATE DATABASE weather_db;
 
 The consumer script will automatically create the table if it doesn’t exist.
 
@@ -76,22 +69,22 @@ Sent: {'city': 'Istanbul', 'temp_c': 12.3, ...}
 
 ### Run the Consumer
 
-Consumes messages from Kafka and writes them to MySQL and CSV:
+- Consumes messages from Kafka and writes them to MySQL and CSV:
 
 python consumer.py
 
 
-Example output:
+- Example output:
 
 Inserted into MySQL: {...}
 Appended to CSV: weather_data_sample.csv
 
 ### Verify the Results
-✔ MySQL Database
+- MySQL Database
 USE weather_db;
 SELECT * FROM weather;
 
-✔ CSV File
+- CSV File
 
 A CSV file will automatically appear in your project folder:
 
