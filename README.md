@@ -65,21 +65,11 @@ Fetches real-time weather data from WeatherAPI and sends it to the Kafka topic:
 
        python producer.py
 
-
-Expected output:
-
-      Sent: {'city': 'Istanbul', 'temp_c': 12.3, ...}
-
 ### 6.  Run the Consumer
 
 Consumes messages from Kafka and writes them to MySQL and CSV:
 
        python consumer.py
-
-Example output:
-
-       Inserted into MySQL: {...}
-       Appended to CSV: weather_data_sample.csv
 
 ### 7. Verify the Results
 
