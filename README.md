@@ -41,31 +41,31 @@ If you are using Docker:
 
        docker-compose up -d
 
-### Set Environment Variables
+### 3. Set Environment Variables
 
-- In PowerShell:
+In PowerShell:
+ 
+       $env:WEATHER_API_KEY="your_api_key"
+       $env:MYSQL_PASSWORD="your_mysql_password"
 
-  #### $env:WEATHER_API_KEY="your_api_key"
-  #### $env:MYSQL_PASSWORD="your_mysql_password"
+### 4. Start MySQL and Create the Database
 
-### Start MySQL and Create the Database
+Run the following command in MySQL:
 
-- Run the following command in MySQL:
-
-- CREATE DATABASE weather_db;
+        CREATE DATABASE weather_db;
 
 The consumer script will automatically create the table if it doesn’t exist.
 
-### Run the Producer
+### 5. Run the Producer
 
-- Fetches real-time weather data from WeatherAPI and sends it to the Kafka topic:
+Fetches real-time weather data from WeatherAPI and sends it to the Kafka topic:
 
-  #### python producer.py
+       python producer.py
 
 
-- Expected output:
+Expected output:
 
-  #### Sent: {'city': 'Istanbul', 'temp_c': 12.3, ...}
+      Sent: {'city': 'Istanbul', 'temp_c': 12.3, ...}
 
 ### Run the Consumer
 
