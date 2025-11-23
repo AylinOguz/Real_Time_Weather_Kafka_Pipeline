@@ -28,18 +28,18 @@ Create a virtual environment:
 
 Activate it (Windows PowerShell):
 
-     #### .venv\Scripts\activate
+       .venv\Scripts\activate
 
 
 Install required Python packages:
 
-  #### pip install -r requirements.txt
+       pip install -r requirements.txt
 
 ### 2. Start Kafka
 
 If you are using Docker:
 
-  #### docker-compose up -d
+       docker-compose up -d
 
 ### Set Environment Variables
 
