@@ -1,4 +1,4 @@
-# Real-Time Weather Data Pipeline with Kafka
+# Real-Time Weather Data Pipeline with Kafkahttps://github.com/AylinOguz/Real_Time_Weather_Kafka_Pipeline/blob/main/README.md
 This project demonstrates a real-time data engineering pipeline that collects weather data from an external API and streams it through Apache Kafka, then stores it into a MySQL database and simultaneously exports it to a CSV file for analysis.
 ## Project Architecture
 Weather API → Producer → Kafka Topic → Consumer → MySQL + CSV
@@ -67,28 +67,27 @@ Expected output:
 
       Sent: {'city': 'Istanbul', 'temp_c': 12.3, ...}
 
-### Run the Consumer
+### 6.  Run the Consumer
 
-- Consumes messages from Kafka and writes them to MySQL and CSV:
+Consumes messages from Kafka and writes them to MySQL and CSV:
 
-   #### python consumer.py
+       python consumer.py
 
+Example output:
 
-- Example output:
+       Inserted into MySQL: {...}
+       Appended to CSV: weather_data_sample.csv
 
-  #### Inserted into MySQL: {...}
-  #### Appended to CSV: weather_data_sample.csv
+### 7. Verify the Results
 
-### Verify the Results
-- MySQL Database
-USE weather_db;
-SELECT * FROM weather;
+MySQL Database
+      USE weather_db;
+      SELECT * FROM weather;
 
-- CSV File
+CSV File
+   A CSV file will automatically appear in your project folder:
 
-#### A CSV file will automatically appear in your project folder:
-
-##### weather_data_sample.csv
+      weather_data_sample.csv
 
 
 
