@@ -19,14 +19,14 @@ Weather API → Producer → Kafka Topic → Consumer → MySQL + CSV
 
   ## How to Run the Project
 
-  ### Install Dependencies
+### Install Dependencies
 
-(Optional but recommended) Create a virtual environment:
+- Create a virtual environment:
 
 python -m venv .venv
 
 
-Activate it (Windows PowerShell):
+- Activate it (Windows PowerShell):
 
 .venv\Scripts\activate
 
