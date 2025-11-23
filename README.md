@@ -96,3 +96,6 @@ SELECT * FROM weather;
 A CSV file will automatically appear in your project folder:
 
 weather_data_sample.csv
+
+docker-compose up -d
+
