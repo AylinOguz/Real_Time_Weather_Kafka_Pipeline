@@ -21,23 +21,23 @@ Weather API → Producer → Kafka Topic → Consumer → MySQL + CSV
 
 ### 1. Install Dependencies
 
-- Create a virtual environment:
+Create a virtual environment:
 
    #### python -m venv .venv
 
 
-- Activate it (Windows PowerShell):
+Activate it (Windows PowerShell):
 
   #### .venv\Scripts\activate
 
 
-- Install required Python packages:
+Install required Python packages:
 
   #### pip install -r requirements.txt
 
 ### 2. Start Kafka
 
-- If you are using Docker:
+If you are using Docker:
 
   #### docker-compose up -d
 
