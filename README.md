@@ -33,20 +33,20 @@ python -m venv .venv
 
 - Install required Python packages:
 
-pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 ### Start Kafka
 
 - If you are using Docker:
 
-docker-compose up -d
+  - docker-compose up -d
 
 ### Set Environment Variables
 
 - In PowerShell:
 
-$env:WEATHER_API_KEY="your_api_key"
-$env:MYSQL_PASSWORD="your_mysql_password"
+  - $env:WEATHER_API_KEY="your_api_key"
+  - $env:MYSQL_PASSWORD="your_mysql_password"
 
 ### Start MySQL and Create the Database
 
