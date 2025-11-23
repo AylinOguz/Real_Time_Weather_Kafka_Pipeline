@@ -28,7 +28,7 @@ python -m venv .venv
 
 - Activate it (Windows PowerShell):
 
-- - .venv\Scripts\activate
+  - .venv\Scripts\activate
 
 
 - Install required Python packages:
